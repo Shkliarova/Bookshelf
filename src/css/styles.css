@@ -1,25 +1,38 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
+/* fonts */
+@import url('./fonts.css');
+
+/* common css */
+@import url('./common.css');
+
+/* Header */
 @import url('./header.css');
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+/* common shopping_list */
+@import url('./shopping_list.css');
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+/* common  root */
+@import url('./root.css');
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+/* common  reset */
+@import url('./reset.css');
+
+/* scroll up */
+@import url('./scroll-up.css');
+
+/* modal pop up */
+@import url('./modal-pop-up.css');
+
+/* support */
+@import url('./support-ukraine.css');
+
+/* all categories */
+@import url('./all-categories.css');
+
+/* Bestsellesr */
+@import url('./bestsellers.css');
+
+/* Hardcover */
+@import url('./hardcover-fiction.css');
+
+/* Position main page */
+@import url('./mainpage.css');

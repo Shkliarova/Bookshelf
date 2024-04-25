@@ -1,0 +1,257 @@
+.backdrop-pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.4);
+  opacity: 1;
+  /* cursor: pointer; */
+  z-index: 20;
+  padding: 94px 15px;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-pop-up {
+  position: absolute;
+  z-index: 30;
+  top: 50%;
+  left: 50%;
+  padding: 40px 24px;
+  min-width: 335px;
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  color: var(--main-text-color);
+  background-color: var(--header-background-color);
+  border: 2px solid var(--dark-header-background);
+  border-radius: 18px;
+
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 24px;
+  height: 24px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: transparent;
+}
+
+.close-button__icon {
+  stroke: var(--main-text-color);
+}
+
+.close-button__icon:focus,
+.close-button__icon:hover {
+  fill: var(--primary-accent-color);
+}
+
+.modal-pop-up-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px 20px;
+  min-width: 210px;
+  height: 46px;
+
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.01em;
+}
+
+/* Book card */
+
+/* .modal-pop-up-content {
+} */
+
+.modal-book-attributes {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-img {
+  max-width: 287px;
+  min-height: 408px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  border: none;
+}
+
+.modal-book-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+}
+
+.modal-book-author {
+  margin-bottom: 18px;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.04em;
+  color: var(--secondary-text-color);
+}
+
+.modal-book-desc {
+  margin-bottom: 14px;
+  color: var(--main-text-color);
+
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+}
+
+.modal-shops {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.modal-shop-img {
+  /* filter: var(--stores-icons-filter); */
+  mix-blend-mode: luminosity;
+  transition: var(--transition);
+}
+
+.modal-shop-img:hover,
+.modal-shop-img:focus {
+  /* filter: var(--stores-icons-filter); */
+  mix-blend-mode: luminosity;
+  filter: var(--stores-icons-filter-hover);
+}
+
+.amazon-modal {
+  filter: var(--modal-image)
+}
+.amazon-modal:hover,
+.amazon-modal:focus {
+  filter: var(--modal-image-hover);
+}
+
+.apple-modal{
+  filter: var(----modal-image-apple);
+}
+.apple-modal:hover,
+.apple-modal:focus {
+  filter: var(--modal-image-hover);
+}
+
+.apple-modal {
+  filter: var(--stores-icons-filter);
+  width: 33px;
+  height: 32px;
+}
+
+.modal-message {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+  max-width: 242px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.04em;
+  /* color: rgba(17, 17, 17, 0.5); */
+  color: var(--secondary-text-color);
+}
+
+/* Tablet and desktop */
+
+@media screen and (min-width: 768px) {
+  .modal-pop-up {
+    max-width: 579px;
+    min-height: 465px;
+    padding: 40px;
+  }
+
+  .close-button {
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .close-button__icon {
+    width: 21px;
+    height: 21px;
+  }
+
+  .modal-pop-up-btn {
+    min-width: 500px;
+    padding: 20px 0;
+  }
+
+  .modal-pop-up-content {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  /* .modal-book-attributes {
+  } */
+
+  .modal-img {
+    max-width: 192px;
+    min-height: 281px;
+  }
+
+  .modal-book-title {
+    font-size: 24px;
+    line-height: 1.17;
+
+    max-width: 270px;
+  }
+
+  .modal-book-author {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .modal-book-desc {
+    margin-bottom: 20px;
+  }
+
+  .modal-shops {
+    margin-bottom: 0;
+  }
+
+  /* .modal-shop-img {
+  }
+
+  .amazon {
+  }
+
+  .book-shop {
+  } */
+
+  .modal-message {
+    max-width: 324px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}

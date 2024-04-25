@@ -1,0 +1,32 @@
+/* mobile-first container */
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+.current-page {
+  background-color: var(--secondary-accent-color);
+  padding: 8px 16px;
+  border-radius: 36px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 335px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 728px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+body {background-color: var(--page-background-color);}

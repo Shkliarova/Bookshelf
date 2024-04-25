@@ -1,0 +1,55 @@
+:root{
+    --header-background-color: #fff;
+    --page-background-color: #F6F6F6;
+    --main-text-color: #111;
+    --secondary-text-color: #B4AFAF;
+    --categories-text-color: rgba(17, 17, 17, 0.60);
+    --primary-accent-color: #4F2EE8;
+    --secondary-accent-color: #EAC645;
+    --variable-primary-accent-color: #4F2EE8;
+    --dark-theme-background: #202024;
+    --dark-header-background: #111;
+    --dark-categories-text: rgba(255, 255, 255, 0.60);
+    --dark-main-text: #fff;
+    --dark-theme-logo: #F3F3F3;
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --stores-icons-filter: grayscale(100%);
+  --stores-icons-filter-hover: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.35));
+  --amazon-store-icon-filter: brightness(0) invert(1);
+  --stores-icons-filter: grayscale(100%);
+  --stores-icons-filter-hover: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.35));
+  --amazon-store-icon-filter: grayscale(100%);
+  --stores-icons-filter-hover: drop-shadow(
+    0px 3px 3px rgba(255, 255, 255, 0.35)
+  );
+  --amazon-store-icon-filter: brightness(0) invert(1);
+}
+.theme-light{
+    --header-background-color: #fff;
+    --page-background-color: #F6F6F6;
+    --main-text-color: #111;
+    --secondary-text-color: #B4AFAF;
+    --categories-text-color: rgba(17, 17, 17, 0.60);
+    --primary-accent-color: #4F2EE8;
+    --secondary-accent-color: #EAC645;
+    --dark-theme-background: #202024;
+    --dark-header-background: #111;
+    --dark-categories-text: rgba(255, 255, 255, 0.60);
+    --dark-main-text: #fff;
+    --dark-theme-logo: #F3F3F3;
+    --variable-primary-accent-color: #4F2EE8;
+    --modal-image-apple: grayscale(100%);
+    --modal-image-hover: drop-shadow(0,0,0,.35);
+    --modal-image-: grayscale(100%);
+    --amazon-shoplist: grayscale(100%);
+  }
+  .theme-dark{
+    --header-background-color: #202024;
+    --main-text-color: #fff;
+    --page-background-color:#202024;
+    --categories-text-color: rgba(255, 255, 255, 0.60);
+    --variable-primary-accent-color: #EAC645;
+    --modal-image: brightness(0) invert(1);
+    --modal-image-hover: drop-shadow(225,225,225,0.35);
+    --amazon-shoplist: grayscale(100%)invert(100%);
+  }
