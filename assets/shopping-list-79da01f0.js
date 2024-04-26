@@ -1,4 +1,4 @@
-import{s as p,S as r,a as b,b as f,t as $}from"./assets/modal-pop-up-c5af880c.js";import"./assets/vendor-eb6adf60.js";const d=document.querySelector(".shopping-book-list"),g=document.querySelector(".stub");d.addEventListener("click",y);function k(o){const a=o.map(({book_image:e,title:s,list_name:t,author:h,description:l,buy_links:c,_id:i})=>{const u=c.find(n=>n.name==="Amazon"),m=c.find(n=>n.name==="Apple Books");return`<li class="shopping-book" data-id="${i}">
+import{s as p,S as r,a as b,b as f,t as $}from"./modal-pop-up-71aa4f37.js";const d=document.querySelector(".shopping-book-list"),g=document.querySelector(".stub");d.addEventListener("click",y);function k(o){const a=o.map(({book_image:e,title:s,list_name:t,author:h,description:l,buy_links:c,_id:i})=>{const u=c.find(n=>n.name==="Amazon"),m=c.find(n=>n.name==="Apple Books");return`<li class="shopping-book" data-id="${i}">
         
         <div class="image-book">
              <img  class="image-book-shopping" src="${e}" alt="${l}" loading="lazy" />
@@ -26,4 +26,3 @@ import{s as p,S as r,a as b,b as f,t as $}from"./assets/modal-pop-up-c5af880c.js
             </button>
         </div>
     </li>`}).join("");d.innerHTML=a}p.length?k(p):g.classList.remove("visually-hidden");function y(o){if(!o.target.classList.contains("js-card-delete"))return;const a=o.target.dataset.id,s=JSON.parse(localStorage.getItem(r)).filter(t=>t._id!==a);localStorage.setItem(r,JSON.stringify(s)),k(s),s.length||g.classList.remove("visually-hidden")}
-//# sourceMappingURL=commonHelpers2.js.map
